@@ -1,10 +1,3 @@
-/*	
-	Sample
-	https://github.com/napalias/sample
-	by Napalias
-	http://napalias.com
-	License: http://opensource.org/licenses/mit-license.php	
-*/
 html,
 body,
 div,
@@ -196,4 +189,189 @@ textarea {
   height: 0;
   font-size: 0;
   overflow: hidden;
+}
+html {
+  max-width: 100%;
+}
+body {
+  background: url("images/background.jpg");
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+body .logo {
+  margin-top: 150px;
+  text-align: center;
+}
+@media only screen and (max-width: 950px) {
+  body .logo {
+    margin-top: 50px;
+  }
+}
+body .logo img {
+  width: 300px;
+}
+body nav {
+  margin: 30px;
+  text-align: center;
+}
+body nav ul li {
+  display: inline;
+  margin: 10px;
+}
+@media only screen and (max-width: 950px) {
+  body nav ul li {
+    display: block;
+  }
+}
+body nav ul li a {
+  color: navy;
+  font-size: 2.2em;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+body nav ul li a:hover {
+  background-color: navy;
+  color: white;
+}
+body .blockbox {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+body .blockbox .blocks {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+body .blockbox .blocks h2,
+body .blockbox .blocks p {
+  text-align: center;
+  font-size: 38px;
+  margin: 40px 10px;
+}
+body .blockbox .blocks p {
+  font-size: 16px;
+}
+body .blockbox .block1 {
+  background-color: orangered;
+}
+body .blockbox .block2 {
+  background-color: orange;
+}
+body .blockbox .block3 {
+  background-color: yellow;
+}
+body .blockbox .block4 {
+  background-color: lightgreen;
+}
+body .blockbox .block5 {
+  background-color: skyblue;
+}
+body footer {
+  margin-top: 80px;
+  background-color: black;
+  border-radius: 5px;
+  border: 5px solid darkgreen;
+}
+body footer .trademark {
+  padding: 20px 10px;
+  margin: 5px 15px;
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  top: 3px;
+}
+@media only screen and (max-width: 1170px) {
+  body footer .trademark {
+    width: 100%;
+    text-align: center;
+  }
+}
+body footer .trademark a {
+  color: yellow;
+  display: inline;
+  margin: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+body footer .trademark a:hover {
+  background-color: yellow;
+  color: black;
+}
+body footer .trademark p {
+  color: grey;
+  display: inline;
+  margin: 5px;
+}
+body footer .trademark .privacy {
+  color: grey;
+  display: inline;
+  margin: 5px;
+  text-decoration: underline;
+}
+body footer .trademark .privacy:hover {
+  background-color: grey;
+  color: black;
+}
+body footer .footernav {
+  margin: 5px 0;
+  padding: 20px;
+  position: relative;
+  display: inline;
+  float: right;
+  right: 300px;
+}
+@media only screen and (max-width: 1170px) {
+  body footer .footernav {
+    display: none;
+  }
+}
+body footer .footernav ul li {
+  margin: 5px;
+  margin-left: 0px;
+  border-right: 1px solid grey;
+}
+body footer .footernav ul li:last-child {
+  border-right: none;
+}
+body footer .footernav ul li a {
+  color: grey;
+  padding: 5 10px;
+  font-size: 1.3em;
+}
+body footer .footernav ul li a:hover {
+  background-color: grey;
+  color: black;
+}
+body footer .features {
+  position: relative;
+  bottom: 21px;
+  left: 250px;
+}
+body footer .features .fullscreen {
+  color: grey;
+  float: right;
+  font-size: 1.3em;
+  position: relative;
+  bottom: 15px;
+  left: 110px;
+}
+body footer .features .fullscreen i {
+  color: white;
+}
+body footer .features .sound {
+  color: grey;
+  float: right;
+  position: relative;
+  bottom: 15px;
+  left: 320px;
+  font-size: 1.3em;
+}
+body footer .features .sound span {
+  color: white;
 }

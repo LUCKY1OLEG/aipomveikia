@@ -1,27 +1,188 @@
-/*	
-	Sample
-	https://github.com/napalias/sample
-	by Napalias
-	http://napalias.com
-	License: http://opensource.org/licenses/mit-license.php	
-*/
-
 @import "less/inc/prefixer"; 	//Generate prefix;
 @import "less/inc/generate"; 	//Generate css style template
-
 @import "less/settings";		//Define some variables
-
 @import "less/inc/reset";		//HTML resets
-
 @import "less/common";   		//Some common used HTML elements and class;
-
 @import "less/layout";     		//Include main layout
 
+html {
+	max-width: 100%;
+}
+body {
+	background: url("images/background.jpg");
+	width: 1200px;
+	margin: 0 auto;
+	max-width: 100%;
+	.logo {
+		margin-top: 150px;
+		text-align: center;
+		@media only screen and (max-width:950px){
+					margin-top: 50px;
+				}
+		img {
+			width: 300px;
+		}
+	}
+	nav {
+		margin: 30px;
+		text-align: center;
+		ul {
 
-
-
-
-
-
-
- 
+			li {
+				display: inline;
+				margin: 10px;
+				@media only screen and (max-width:950px){
+					display: block;
+				}
+				a {
+					color: navy;
+					font-size: 2.2em;
+					text-decoration: none;
+					padding: 5px 10px;
+					border-radius: 5px;
+					&:hover {
+						background-color: navy;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	.blockbox {
+		width: 100%;
+		text-align: center;
+		margin-top: 60px;
+		.blocks {
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+			display: inline-block;
+			border-radius: 5px;
+			h2, p {
+				text-align: center;
+				font-size: 38px;
+				margin: 40px 10px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		.block1 {
+			background-color: orangered;
+		}
+		.block2 {
+			background-color: orange;
+		}
+		.block3 {
+			background-color: yellow;
+		}
+		.block4 {
+			background-color: lightgreen;
+		}
+		.block5 {
+			background-color: skyblue;
+		}
+	}
+	footer {
+		margin-top: 80px;
+		background-color: black;
+		border-radius: 5px;
+		border: 5px solid darkgreen;
+		.trademark {
+			padding: 20px 10px;
+			margin: 5px 15px;
+			display: inline-block;
+			width: 300px;
+			position: relative;
+			top: 3px;
+			@media only screen and (max-width: 1170px){
+					width: 100%;
+					text-align: center;
+				}
+			a {
+				color: yellow;
+				display: inline;
+				margin: 5px;
+				padding: 5px 10px;
+				text-decoration: none;
+				border-radius: 5px;
+				&:hover {
+					background-color: yellow;
+					color: black;
+				}
+			}
+			p {
+				color: grey;
+				display: inline;
+				margin: 5px;
+			}
+			.privacy {
+				color: grey;
+				display: inline;
+				margin: 5px;
+				text-decoration: underline;
+				&:hover {
+					background-color: grey;
+					color: black;
+				}
+			}
+		}
+		.footernav {
+			margin: 5px 0;
+			padding: 20px;
+			position: relative;
+			display: inline;
+			float: right;
+			right: 300px;
+			@media only screen and (max-width: 1170px){
+					display: none;
+				}
+			ul {
+				li {
+					margin: 5px;
+					margin-left: 0px;
+					border-right: 1px solid grey;
+					&:last-child {
+						border-right: none;
+					}
+					a {
+						color: grey;
+						padding: 5 10px;
+						font-size: 1.3em;
+						&:hover {
+							background-color: grey;
+							color: black;
+						}
+					}
+				}
+			}
+		}
+		.features {
+			position: relative;
+			bottom: 21px;
+			left: 250px;
+			.fullscreen {
+				color: grey;
+				float: right;
+				font-size: 1.3em;
+				position: relative;
+				bottom: 15px;
+				left: 110px;
+				i {
+					color: white;
+				}
+			}
+			.sound {
+				color: grey;
+				float: right;
+				position: relative;
+				bottom: 15px;
+				left: 320px;
+				font-size: 1.3em;
+				span {
+					color: white;
+				}
+			}
+		}
+	}
+}
