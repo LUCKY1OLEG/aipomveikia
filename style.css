@@ -246,6 +246,17 @@ body .blockbox .blocks {
   margin: 5px;
   display: inline-block;
   border-radius: 5px;
+  margin: 15px;
+  margin-bottom: 50px;
+}
+body .blockbox .blocks:hover {
+  width: 230px;
+  height: 230px;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 0px;
+  margin: 0;
+  bottom: 20px;
 }
 body .blockbox .blocks h2,
 body .blockbox .blocks p {
@@ -255,6 +266,34 @@ body .blockbox .blocks p {
 }
 body .blockbox .blocks p {
   font-size: 16px;
+}
+body .blockbox .blocks .hidden {
+  visibility: hidden;
+  text-decoration: none;
+  padding: 2px 4px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.3em;
+  margin: 0;
+}
+body .blockbox .blocks .hidden:hover {
+  background-color: white;
+  color: black;
+}
+body .blockbox .blocks .shown {
+  visibility: initial;
+  text-decoration: none;
+  padding: 2px 4px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.3em;
+  margin: 0;
+}
+body .blockbox .blocks .shown:hover {
+  background-color: white;
+  color: black;
 }
 body .blockbox .block1 {
   background-color: orangered;
@@ -272,7 +311,7 @@ body .blockbox .block5 {
   background-color: skyblue;
 }
 body footer {
-  margin-top: 80px;
+  margin-top: 30px;
   background-color: black;
   border-radius: 5px;
   border: 5px solid darkgreen;
@@ -374,4 +413,10 @@ body footer .features .sound {
 }
 body footer .features .sound span {
   color: white;
+}
+.audio {
+  padding: 30px;
+  height: 200px;
+  width: 200px;
+  background-color: white;
 }
